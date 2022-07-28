@@ -1,3 +1,7 @@
 /traefik/certs/*
 *.code-workspace
 .env
+.DS_Store
+/extra/ssl/certbot
+/extra/ssl/nginx*
+/extra/ssl/dhparam.pem
