@@ -8,6 +8,6 @@ curl --location --request POST "$LAGO_URL/api/v1/applied_add_ons" \
     "applied_add_on": {
       "customer_id": "666",
       "add_on_code": "backup",
-      "amount_currency": "EUR"
+      "amount_currency": "USD"
     }
   }'
