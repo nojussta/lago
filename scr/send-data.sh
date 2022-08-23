@@ -3,16 +3,16 @@ export DATA=$(du -sh . | numfmt --from=auto | tr -d ' .')
 # "data-used": "'"$DATA"'"
 
 LAGO_URL="http://0.0.0.0:3000"
-API_KEY="877a338f-4e15-4907-b4e3-990232125fe5"
+API_KEY="42349bf1-e6b3-4e29-8cb1-ac33590b04d3"
 
 curl --location --request POST "$LAGO_URL/api/v1/events" \
     --header "Authorization: Bearer $API_KEY" \
     --header 'Content-Type: application/json' \
     --data-raw '{
   "event": {
-    "transaction_id": "tr-id-004",
-    "customer_id": "id-1",
-    "code": "123",
+    "transaction_id": "tr-id-001",
+    "customer_id": "mantasM",
+    "code": "dusage",
     "timestamp": 1650893379,
     "properties": {
       "data-used": "'"$DATA"'"
